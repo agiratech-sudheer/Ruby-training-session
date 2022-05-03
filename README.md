@@ -81,7 +81,24 @@ puts "Combined combination operator"
 puts(20 <=> 20)
 puts(10 <=> 20)
 puts(20 <=> 10)
+### Ternary Operator
 
+It is a conditional operator which is a shorthand version of the if-else statement. It has three operands and hence the name ternary. It will return one of two values depending on the value of a Boolean expression. 
+Syntax : 
+ 
+
+condition ? first_expression : second_expression;
+
+#### Excercise: 
+ 
+
+condition: It be evaluated to true or false.
+
+If the condition is true
+ first_expression is evaluated and becomes the result. 
+
+If the condition is false, 
+ second_expression is evaluated and becomes the result. 
 ### Logical Operators
 They are used to combine two or more conditions/constraints or to complement the evaluation of the original condition in consideration. They are described below:
  
