@@ -223,3 +223,61 @@ whowouldwin2
 
 
 ![image](https://user-images.githubusercontent.com/83069160/166428578-75ce2a05-114f-4854-8579-8cbe5185e2b9.png)
+
+##Exception Handling 
+
+SYNTAX:
+
+begin
+  CODE THAT MIGHT BREAK THINGS
+rescue
+    CODE THAT WILL RUN IF THINGS BREAK
+end
+
+
+#### Excercise
+1.
+def divider(num1, num2)
+    begin
+      return num1/num2
+    rescue
+      puts "Zero division error"
+    end
+end
+
+puts divider(1,0)
+
+
+2.
+def divider(num1, num2)
+    begin
+      return num1/num2
+    rescue
+      puts "Zero division error"
+    end
+end
+
+
+begin
+    puts divider(1,0, 3)
+rescue => e
+    puts e
+end
+
+
+$e.message
+$e.class
+$e.backtrace
+
+
+def string_validator(input)
+    if input.class! = String
+        raise StandardError, "message"
+    end
+    return input
+end
+
+puts string_validator(9)
+puts string_validator("Im string")
+
+
